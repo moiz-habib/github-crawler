@@ -61,7 +61,7 @@ jobs:
           PGPASSWORD: postgres
           PGDATABASE: github
           PGPORT: 5432
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 
       - name: Export database contents to CSV
         run: |
