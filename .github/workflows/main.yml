@@ -66,7 +66,7 @@ jobs:
       - name: Export database contents to CSV
         run: |
           sudo apt-get install -y postgresql-client
-          psql postgresql://postgres:postgres@localhost:5432/github -c "\COPY repositories TO 'repos.csv' CSV HEADER"
+          psql postgresql://postgres:12345@localhost:5432/github -c "\COPY repositories TO 'repos.csv' CSV HEADER"
 
       - name: Upload CSV as artifact
         uses: actions/upload-artifact@v4
