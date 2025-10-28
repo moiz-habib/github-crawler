@@ -58,7 +58,7 @@ jobs:
         env:
           PGHOST: localhost
           PGUSER: postgres
-          PGPASSWORD: postgres
+          PGPASSWORD: 12345
           PGDATABASE: github
           PGPORT: 5432
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
